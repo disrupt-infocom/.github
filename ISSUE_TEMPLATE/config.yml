@@ -1,8 +1,8 @@
 blank_issues_enabled: false  # trueにすると「テンプレートを使わない空issue」を許可する
 contact_links:               # テンプレート以外の問い合わせ先を案内できる
   - name: 📖 ドキュメントを読む
-    url: https://example.com/docs
+    url: https://github.com/disrupt-infocom/infocom-docs/wiki
     about: よくある質問や使い方はこちらを参照してください
   - name: 💬 Discussions
-    url: https://github.com/<your-username>/<your-repo>/discussions
-    about: 質問や雑談はこちらでどうぞ
+    url: https://github.com/orgs/disrupt-infocom/discussions
+    about: 質問や要望はこちらでどうぞ
