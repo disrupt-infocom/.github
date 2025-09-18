@@ -1,0 +1,98 @@
+name: 🔨 その他タスク (General Task)
+description: 開発以外のタスク（インフラ、ドキュメント作成など）に使用します
+title: "chore: [タスクの概要を記述]"
+labels: ["task"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        開発以外のタスク（インフラ、ドキュメント作成など）に使用するテンプレートです。
+
+  - type: textarea
+    id: purpose
+    attributes:
+      label: 📝 タスクの目的・背景 (Purpose)
+      description: タスクの目的や背景を記述してください
+      placeholder: |
+        例: サーバーメンテナンスに伴う設定最適化
+        例: ドキュメント整備による引き継ぎ円滑化
+    validations:
+      required: true
+
+  - type: textarea
+    id: target
+    attributes:
+      label: 🎯 対象 (Target)
+      description: 対象となる環境やシステムを記述してください
+      placeholder: |
+        例: 対象環境: staging / production
+        例: 対象システム: API サーバー app-01, app-02
+    validations:
+      required: true
+
+  - type: textarea
+    id: todo-list
+    attributes:
+      label: ✅ やることリスト (To-Do List)
+      description: 実施予定のタスクをチェックリスト形式で記述してください
+      placeholder: |
+        - [ ] (例) 監視アラートを一時抑止する
+        - [ ] (例) 手順書をConfluenceに掲載する
+        - [ ] 〇〇サーバーのミドルウェアをバージョンアップする
+        - [ ] 新しい設定ファイルを配置する
+        - [ ] 動作確認を行う
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: 💥 影響範囲 (Impact)
+      description: このタスクによる影響や副作用を記述してください
+      placeholder: |
+        例: 一時的にAPIレスポンスが遅延する可能性
+        例: 関連サービスの再起動が必要
+    validations:
+      required: true
+
+  - type: textarea
+    id: rollback
+    attributes:
+      label: 変更の取り消し・復旧手順 (Rollback / Recovery Plan)
+      description: 問題が発生した際の復旧手順を記述してください
+      placeholder: |
+        例: 設定を旧版に戻してサービス再起動
+    validations:
+      required: true
+
+  - type: textarea
+    id: outcome
+    attributes:
+      label: ✅ 実施結果サマリ (Outcome)
+      description: 実施後に結果をまとめてください（実施前は空欄で構いません）
+      placeholder: |
+        - 実施日時/担当:
+        - 変更点の要約:
+        - 検証結果:
+        - 代表ログコメントへのリンク: [例: https://github.com/org/repo/issues/123#issuecomment-xxxxxx]
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ## 🧾 作業ログの残し方 (How to Log Work)
+        - 実作業の詳細（実行コマンド/結果/検証など）は本画面下部の「コメント」に追記してください
+        - 秘密情報は記載しない。詳細ログは社内ツールに保存し、リンクを貼る
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: 補足 (Additional Context)
+      description: その他の補足情報があれば記述してください
+      placeholder: |
+        例: 関連チケット: PROJECT-123 / ドキュメントURL
+        例: 作業ウィンドウ: 9/30 22:00-23:00
+    validations:
+      required: false
