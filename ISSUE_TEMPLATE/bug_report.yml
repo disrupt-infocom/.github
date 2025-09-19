@@ -1,6 +1,6 @@
 name: 🐛 不具合報告 (Bug Report)
 description: 動作のおかしい点やエラーについて報告してください
-title: "fix: [不具合の概要を記述]"
+title: "[不具合] [不具合の概要を記述]"
 labels: ["bug"]
 assignees: []
 
@@ -13,7 +13,7 @@ body:
   - type: textarea
     id: summary
     attributes:
-      label: 🐞 不具合の概要 (Summary)
+      label: "🐞 不具合の概要 (Summary)"
       description: 何が問題かを一言で
       placeholder: |
         例: 「注文履歴」が読み込まれずスピナーが回り続ける
@@ -24,7 +24,7 @@ body:
   - type: textarea
     id: steps-to-reproduce
     attributes:
-      label: 🐾 再現手順 (Steps to Reproduce)
+      label: "🐾 再現手順 (Steps to Reproduce)"
       description: 再現に必要な手順を番号付きで
       placeholder: |
         1. 〇〇ページにアクセスする
@@ -32,12 +32,11 @@ body:
         3. 〇〇という操作をするとエラーが発生する
     validations:
       required: true
-    render: bash
 
   - type: textarea
     id: expected
     attributes:
-      label: 👍 期待される動作 (Expected Behavior)
+      label: "👍 期待される動作 (Expected Behavior)"
       placeholder: |
         例: 3秒以内に一覧が表示される
         例: エラーメッセージは表示されない
@@ -47,7 +46,7 @@ body:
   - type: textarea
     id: actual
     attributes:
-      label: 👎 実際の動作 (Actual Behavior)
+      label: "👎 実際の動作 (Actual Behavior)"
       placeholder: |
         例: 500エラーが返りページがリロードされる
         例: 入力欄がグレーアウトして操作不能になる
@@ -57,32 +56,31 @@ body:
   - type: input
     id: os
     attributes:
-      label: 🖥️ 環境 - OS
-      placeholder: 例: Windows 11 / macOS Sonoma / iOS 18 / Android 14
+      label: "🖥️ 環境 - OS"
+      placeholder: "例: Windows 11 / macOS Sonoma / iOS 18 / Android 14"
     validations:
       required: true
 
   - type: input
     id: browser
     attributes:
-      label: 🖥️ 環境 - ブラウザ
-      placeholder: 例: Chrome 128 / Safari 17 / Firefox 130 / Edge 128
+      label: "🖥️ 環境 - ブラウザ"
+      placeholder: "例: Chrome 128 / Safari 17 / Firefox 130 / Edge 128"
     validations:
       required: false
 
   - type: input
     id: version
     attributes:
-      label: 🖥️ 環境 - バージョン
-      description: アプリ/サービス/ライブラリなどの該当バージョン
-      placeholder: 例: v2.5.1
+      label: "🖥️ 環境 - バージョン"
+      placeholder: "例: v2.5.1"
     validations:
       required: true
 
   - type: textarea
     id: environment-notes
     attributes:
-      label: 環境に関する補足
+      label: "環境に関する補足"
       placeholder: |
         例: 社内VPN接続時のみ再現
         例: 低速回線(3G)で頻度が高い
@@ -92,16 +90,16 @@ body:
   - type: textarea
     id: screenshots
     attributes:
-      label: スクリーンショット / ログ
+      label: "スクリーンショット / ログ"
       description: 可能であれば画像やログを貼り付けてください（秘密情報はマスク）
-      placeholder: 画像をドラッグ&ドロップ、またはログを貼り付け
+      placeholder: "画像をドラッグ&ドロップ、またはログを貼り付け"
     validations:
       required: false
 
   - type: textarea
     id: additional-context
     attributes:
-      label: 補足 (Additional Context)
+      label: "補足 (Additional Context)"
       description: 関連Issueや参考情報があれば記載してください
       placeholder: |
         例: 関連Issue: #123、サーバーログ: 2025-09-10 14:32 付近
