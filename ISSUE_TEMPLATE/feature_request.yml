@@ -1,0 +1,70 @@
+name: ✨ 機能追加・改善要望 (Feature Request)
+description: 新しい機能の提案や、既存機能の改善案を記述してください
+title: "feat: [ここに概要を記述]"
+labels: ["enhancement"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        新機能や改善案について、できるだけ具体的に記載してください。必要に応じてスクリーンショットや設計リンクを添付してください。
+
+  - type: textarea
+    id: overview
+    attributes:
+      label: 📝 概要 (Overview)
+      description: 何を実現したいかを一言で
+      placeholder: |
+        例: 「お気に入り機能を追加して商品を保存できるようにする」
+        例: 商品詳細ページに「♡」ボタンを設置
+    validations:
+      required: true
+
+  - type: textarea
+    id: background
+    attributes:
+      label: 🤔 背景・目的 (Background)
+      description: なぜ必要か、どんな課題を解決するか
+      placeholder: |
+        例: ユーザーが後で見返したい商品を管理したいという要望がある
+        例: 直帰率低下と再訪促進のために保存導線を用意したい
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: ✅ 受け入れ条件 (Acceptance Criteria)
+      description: 満たすべき条件をチェックリストで
+      placeholder: |
+        例: ログインユーザーは商品のお気に入り登録/解除ができる
+        例: お気に入り一覧で登録済み商品が表示・並び替えできる
+        - [ ] ユーザーが〇〇できること
+        - [ ] 〇〇というデータが正しく保存されること
+        - [ ] △△画面で〇〇が表示されること
+    validations:
+      required: true
+    render: bash
+
+  - type: textarea
+    id: design
+    attributes:
+      label: 🎨 デザイン (Design)
+      description: 画面案、API案、設計リンクなど
+      placeholder: |
+        例: 画面案: 商品詳細の右上にハートアイコンを配置
+        例: API連携: POST/DELETE /favorites、一覧は GET /favorites を使用
+        ※イメージ画像があれば貼り付けてください
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: 補足 (Additional Context)
+      description: 関連Issue、影響範囲、参考リンクなど
+      placeholder: |
+        例: 関連Issue: #45、デザイン案: Figmaリンク
+        例: 影響範囲: 商品詳細/一覧/マイページ
+    validations:
+      required: false
