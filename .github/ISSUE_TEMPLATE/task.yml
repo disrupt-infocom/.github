@@ -1,4 +1,4 @@
-name: 🔨 その他タスク (General Task)
+name: 🔨 一般的なタスク (General Task)
 description: 開発以外のタスク（インフラ、ドキュメント作成など）に使用します
 title: "chore: [タスクの概要を記述]"
 labels: ["task"]
