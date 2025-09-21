@@ -44,7 +44,6 @@ body:
         - [ ] △△画面で〇〇が表示されること
     validations:
       required: true
-    render: bash
 
   - type: textarea
     id: design
