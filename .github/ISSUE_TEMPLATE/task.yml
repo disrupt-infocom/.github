@@ -3,6 +3,8 @@ description: 開発以外のタスク（インフラ、ドキュメント作成�
 title: "chore: [タスクの概要を記述]"
 labels: ["task"]
 assignees: []
+projects:
+  - org/disrupt-infocom/disrupt-infocom
 body:
   - type: markdown
     attributes:
