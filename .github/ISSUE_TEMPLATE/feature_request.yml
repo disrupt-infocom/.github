@@ -35,13 +35,13 @@ body:
     id: acceptance-criteria
     attributes:
       label: ✅ 受け入れ条件 (Acceptance Criteria)
-      description: 満たすべき条件をチェックリストで
+      description: 満たすべき条件を記述してください
       placeholder: |
         例: ログインユーザーは商品のお気に入り登録/解除ができる
         例: お気に入り一覧で登録済み商品が表示・並び替えできる
-        - [ ] ユーザーが〇〇できること
-        - [ ] 〇〇というデータが正しく保存されること
-        - [ ] △△画面で〇〇が表示されること
+        ユーザーが〇〇できること
+        〇〇というデータが正しく保存されること
+        △△画面で〇〇が表示されること
     validations:
       required: true
 
