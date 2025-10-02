@@ -3,7 +3,7 @@ description: 開発以外のタスク（インフラ、ドキュメント作成�
 labels: ["task"]
 assignees: []
 projects:
-  - org/disrupt-infocom/disrupt-infocom
+  - org/disrupt-infocom/1
 body:
   - type: markdown
     attributes:
